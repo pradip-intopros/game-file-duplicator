@@ -21,7 +21,7 @@ VSVersionInfo(
            StringStruct(u'LegalCopyright', u'Copyright (c) 2024'),
            StringStruct(u'OriginalFilename', u'Game File Duplicator.exe'),
            StringStruct(u'ProductName', u'Game File Duplicator'),
-           StringStruct(u'ProductVersion', u'1.0.0')])
+           StringStruct(u'ProductVersion', u'1.0.1')])
       ]
     ),
     VarFileInfo([VarStruct(u'Translation', [1033, 1200])])
