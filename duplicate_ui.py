@@ -13,7 +13,12 @@ class DuplicateUI(QMainWindow):
         self.setGeometry(100, 100, 600, 200)
         
         # Set window icon
-        icon_path = os.path.join(os.path.dirname(__file__), 'logo.PNG')
+        if getattr(sys, 'frozen', False):
+            # Running in PyInstaller bundle
+            icon_path = os.path.join(sys._MEIPASS, 'logo.PNG')
+        else:
+            # Running in development
+            icon_path = os.path.join(os.path.dirname(__file__), 'logo.PNG')
         self.setWindowIcon(QIcon(icon_path))
         
         # Create central widget and main layout

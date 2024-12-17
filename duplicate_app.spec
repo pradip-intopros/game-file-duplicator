@@ -6,7 +6,7 @@ a = Analysis(
     ['duplicate_ui.py'],
     pathex=[],
     binaries=[],
-    datas=[('logo.PNG', '.')],
+    datas=[('logo.PNG', '.')],  # Correct case for the PNG file
     hiddenimports=['duplicate'],
     hookspath=[],
     hooksconfig={},
@@ -38,6 +38,6 @@ exe = EXE(
     target_arch=None,
     codesign_identity='certificate.pfx',
     entitlements_file=None,
-    icon='C:/Users/Pc/Downloads/DUPLICATE/logo.PNG',
+    icon='logo.PNG',  # Correct case for the PNG file
     version='file_version_info.txt'
 )
