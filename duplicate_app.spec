@@ -36,7 +36,8 @@ exe = EXE(
     console=False,
     disable_windowed_traceback=False,
     target_arch=None,
-    codesign_identity=None,
+    codesign_identity='certificate.pfx',
     entitlements_file=None,
     icon='C:/Users/Pc/Downloads/DUPLICATE/logo.PNG',
+    version='file_version_info.txt'
 )
